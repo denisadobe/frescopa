@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-reward",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-02T02:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://frescopa.coffee/",
+    "originPage": "homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "rewards-promotion",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "rewards program banners",
+      "dark-themed promotional sections",
+      "gift card or loyalty program CTAs"
+    ],
+    "notSuitableFor": [
+      "light-themed pages",
+      "product listings",
+      "text-heavy content sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T02:35:00.000Z"
+  }
+}

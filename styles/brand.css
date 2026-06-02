@@ -1,0 +1,16 @@
+:root {
+  --heading-font-family: baskerville, serif;
+  --body-font-family: roboto, sans-serif;
+  --background-color: #fff;
+  --text-color: #58181d;
+  --link-color: #58181d;
+  --link-hover-color: #3a1012;
+  --section-padding: 48px 0;
+  --nav-height: 70px;
+  --heading-size-xxl: 36px;
+  --heading-size-xl: 48px;
+  --heading-size-l: 54px;
+  --heading-size-m: 32px;
+  --heading-size-s: 24px;
+  --heading-size-xs: 18px;
+}

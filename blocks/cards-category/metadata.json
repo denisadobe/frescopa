@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-02T02:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://frescopa.coffee/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-category",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "image + title",
+    "buttonCount": 0,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product category navigation tiles",
+      "icon-based category browsing",
+      "simple image + label card grids"
+    ],
+    "notSuitableFor": [
+      "cards with long descriptions",
+      "cards with CTAs",
+      "content-heavy card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T02:35:00.000Z"
+  }
+}

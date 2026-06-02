@@ -1,0 +1,127 @@
+/* hero-quiz block - full-width banner with background image and left-aligned text */
+
+/* Full-width wrapper override */
+.hero-quiz-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.hero-quiz {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: rgb(235 164 57);
+  min-height: 300px;
+  margin: 0 16px;
+}
+
+/* Row 1: background image (absolutely positioned) */
+.hero-quiz > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Row 2: content (foreground) */
+.hero-quiz > div:last-child {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 24px;
+  min-height: 300px;
+}
+
+.hero-quiz > div:first-child > div {
+  height: 100%;
+}
+
+.hero-quiz > div:first-child picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-quiz > div:first-child img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-quiz > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Eyebrow text (first paragraph) */
+.hero-quiz > div:last-child p:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--body-font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.96px;
+  color: var(--text-color);
+  margin: 0 0 8px;
+}
+
+/* Heading */
+.hero-quiz h3 {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: var(--heading-font-family);
+  line-height: 1;
+  color: rgb(255 255 255);
+  margin: 0 0 16px;
+}
+
+/* CTA link styled as button */
+.hero-quiz > div:last-child p:last-child {
+  margin: 16px 0 0;
+}
+
+.hero-quiz > div:last-child a:any-link {
+  display: inline-block;
+  background-color: rgb(0 100 125);
+  color: rgb(255 255 255);
+  padding: 8px 19.2px;
+  border: 2px solid rgb(0 100 125);
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--body-font-family);
+  letter-spacing: 1.28px;
+  text-decoration: none;
+}
+
+.hero-quiz > div:last-child a:hover,
+.hero-quiz > div:last-child a:focus-visible {
+  background-color: rgb(0 80 100);
+  border-color: rgb(0 80 100);
+  color: rgb(255 255 255);
+}
+
+/* No-image variant */
+.hero-quiz.no-image h3 {
+  color: var(--text-color);
+}
+
+@media (width >= 900px) {
+  .hero-quiz {
+    min-height: 490px;
+    margin: 0 32px;
+  }
+
+  .hero-quiz > div:last-child {
+    padding: 10px 87px;
+    min-height: 490px;
+    max-width: 540px;
+  }
+
+  .hero-quiz h3 {
+    font-size: 56px;
+    line-height: 56px;
+  }
+}

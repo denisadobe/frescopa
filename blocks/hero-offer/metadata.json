@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-offer",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-02T02:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://frescopa.coffee/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "subscription-offer",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional banners",
+      "subscription offer sections",
+      "horizontal CTA banners with background decoration"
+    ],
+    "notSuitableFor": [
+      "full-width hero banners with large imagery",
+      "content-heavy sections",
+      "card-based layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T02:35:00.000Z"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://frescopa.coffee/"
+      ],
+      "description": "Coffee brand homepage with hero, product showcase, and brand story",
+      "blocks": [
+        {
+          "name": "hero-quiz",
+          "instances": [
+            ".teaser-container .teaser.dark.right"
+          ]
+        },
+        {
+          "name": "hero-offer",
+          "instances": [
+            ".offer-container .offer.block"
+          ]
+        },
+        {
+          "name": "store-locator",
+          "instances": [
+            ".store-locator-container .store-locator.block"
+          ]
+        },
+        {
+          "name": "cards-category",
+          "instances": [
+            ".card-tiles.cards-container .cards.block"
+          ]
+        },
+        {
+          "name": "cards-promo",
+          "instances": [
+            ".home.cards-container .cards.block"
+          ]
+        },
+        {
+          "name": "hero-reward",
+          "instances": [
+            ".reward-container .reward.light.left.block"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Quiz",
+          "selector": ".section.teaser-container",
+          "style": null,
+          "blocks": [
+            "hero-quiz"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Offer Banner",
+          "selector": ".section.offer-container",
+          "style": null,
+          "blocks": [
+            "hero-offer"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Store Locator",
+          "selector": ".section.store-locator-container",
+          "style": null,
+          "blocks": [
+            "store-locator"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Product Categories",
+          "selector": ".section.card-tiles.cards-container",
+          "style": null,
+          "blocks": [
+            "cards-category"
+          ],
+          "defaultContent": [
+            ".card-tiles.cards-container .default-content-wrapper h2"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Promotional Cards",
+          "selector": ".section.home.cards-container",
+          "style": null,
+          "blocks": [
+            "cards-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Rewards Banner",
+          "selector": ".section.reward-container",
+          "style": null,
+          "blocks": [
+            "hero-reward"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

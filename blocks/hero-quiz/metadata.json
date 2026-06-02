@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-quiz",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-02T02:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://frescopa.coffee/",
+    "originPage": "homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "colored",
+    "density": "spacious",
+    "purpose": "quiz-promotion",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "eyebrow + heading + CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "homepage hero banners",
+      "quiz or interactive feature promotions",
+      "campaign landing pages with background images"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "product detail pages",
+      "minimal blog post headers"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T02:35:00.000Z"
+  }
+}

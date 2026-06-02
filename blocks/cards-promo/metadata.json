@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-promo",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-02T02:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://frescopa.coffee/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "promotional",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description + CTA",
+    "buttonCount": 1,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "large promotional cards with imagery",
+      "featured product/service highlights",
+      "subscription or offer showcases with CTAs"
+    ],
+    "notSuitableFor": [
+      "simple category tiles",
+      "icon-based card grids",
+      "text-only card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T02:35:00.000Z"
+  }
+}

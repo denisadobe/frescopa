@@ -1,0 +1,39 @@
+{
+  "variantName": "store-locator",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-06-02T02:35:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://frescopa.coffee/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "store-finder",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + search + map",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "store locator pages",
+      "location finder widgets",
+      "map-based interactive sections"
+    ],
+    "notSuitableFor": [
+      "static content pages",
+      "product listings",
+      "text-heavy sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-02T02:35:00.000Z"
+  }
+}
