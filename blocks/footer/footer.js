@@ -9,12 +9,16 @@ export default async function decorate(block) {
   // load footer as fragment
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
-  const fragment = await loadFragment(footerPath);
+  let fragment = await loadFragment(footerPath);
+  if (!fragment) {
+    fragment = await loadFragment(`/content${footerPath}`);
+  }
 
   // decorate footer DOM
   block.textContent = '';
   const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  const sections = [...fragment.querySelectorAll(':scope .section')];
+  sections.forEach((section) => footer.append(section));
 
   block.append(footer);
 }

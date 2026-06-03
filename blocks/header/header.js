@@ -116,15 +116,21 @@ export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-  const fragment = await loadFragment(navPath);
+  let fragment = await loadFragment(navPath);
+  if (!fragment) {
+    fragment = await loadFragment(`/content${navPath}`);
+  }
 
   // decorate nav DOM
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
-  while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
+  const sections = [...fragment.querySelectorAll(':scope .section')];
+  sections.forEach((section) => nav.append(section));
 
-  const classes = ['brand', 'sections', 'tools'];
+  const classes = sections.length > 3
+    ? ['announcement', 'brand', 'sections', 'tools']
+    : ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);

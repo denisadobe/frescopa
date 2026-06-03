@@ -11,16 +11,29 @@ header nav {
   box-sizing: border-box;
   display: grid;
   grid-template:
+    'announcement announcement announcement' auto
     'hamburger brand tools' var(--nav-height)
     'sections sections sections' 1fr / auto 1fr auto;
   align-items: center;
   gap: 0 24px;
   margin: auto;
   max-width: 1248px;
-  height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
 }
+
+header nav .nav-announcement {
+  grid-area: announcement;
+  margin: 0 -24px;
+  background-color: var(--text-color);
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
 
 header nav[aria-expanded='true'] {
   grid-template:
@@ -38,10 +51,17 @@ header nav[aria-expanded='true'] {
 
   header nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: 0 32px;
     max-width: 1264px;
-    padding: 0 32px;
+    padding: 16px 32px;
+  }
+
+  header nav .nav-announcement {
+    flex-basis: 100%;
+    margin: 0 -32px;
   }
 
   header nav[aria-expanded='true'] {
